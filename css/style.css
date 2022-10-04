@@ -9,11 +9,7 @@ font-family: Raleway, sans-serif ;
 font-style: normal; 
 max-width: 1440px;
 background-color: white;
-}
-
-.container-all{
-    margin-left: 40px;
-    margin-right: 40px;
+margin: 40px
 }
 
 /* _________________________________________________ */
@@ -179,7 +175,7 @@ background-color: white;
 
 /* Accommodations + populars containers*/
 
-.main-container{
+.all-accommodation-container{
     display: flex;
     justify-content: space-around;    
 }
@@ -434,7 +430,7 @@ aside>h2{
 
     /* main container( accommodation + populars ) */
 
-    .main-container{
+    .all-accommodation-container{
         display: flex;
         flex-direction: column;
         width: 100%;    
@@ -533,13 +529,13 @@ aside>h2{
         margin: 0;
     }
 
-    .container-all{
+    /* .container-all{
         
         display: flex;
         flex-direction: column;
         margin: 0;
 
-    }
+    } */
 
     /* navigation */
 
@@ -656,7 +652,7 @@ aside>h2{
 
     /* main column reverse */
 
-    .main-container{
+    .all-accommodation-container{
         display: flex;
         flex-direction: column-reverse;
         margin: 0;
