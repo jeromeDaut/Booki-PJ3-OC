@@ -9,7 +9,7 @@ font-family: Raleway, sans-serif ;
 font-style: normal; 
 max-width: 1440px;
 background-color: white;
-margin: 40px
+margin: 40px 40px 0 40px;
 }
 
 /* _________________________________________________ */
@@ -30,7 +30,7 @@ margin: 40px
 
 /* ________________________________________________ */
                        /* nav */
-.header-container{
+header{
     display: flex;
     justify-content: space-between;
 }
@@ -127,24 +127,45 @@ margin: 40px
     align-items: center;
     font-size: 18px;
     margin-top: 20px;
+    flex-wrap: nowrap;
+    width: 100%;
 }
 
 .filter-container{
     font-size: 17px;
     font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    height: 50px;
+    margin-left: 20px;
 }
 
 .filter-container .icon{
     font-size: 22px;
+    width: 20%;
+    align-self: center;
+    margin-left: 10px;
+}
+.filter>p{
+    width: 70%;
+    align-self: center;
+    margin-right: 5px;
+
 }
 
-.filter{
-    border: 2px solid #D9D9D9;
-    border-radius: 25px 25px 25px 25px ;
-    padding: 14px 20px;
-    margin-left: 50px;
-}
-
+    .filter{
+        border: 2px solid #D9D9D9;
+        border-radius: 25px;
+        width: 25%;
+        height: 50px;
+        padding: 0;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 11px;
+    }
 .filter:hover{
     background-color: #deebff;
     cursor: pointer;
@@ -155,6 +176,8 @@ margin: 40px
 .info-container{    
     display: flex;
     align-items: center;
+    width: 100%;
+    height: 25%;
 }
 
 .circle-info{
@@ -289,7 +312,7 @@ margin: 40px
 
 /* ___________________________________________________*/
                 /* section most popular */                
-
+   
 .accommodation-populars-title{
     display: flex;
     justify-content: space-around;
@@ -303,13 +326,12 @@ margin: 40px
 .article-card-container-row{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     background: white;
     border-radius: 20px;
     box-shadow: 3px 3px 5px 2px #b2b2b2;
-    height: 144px;   
     margin: 0 30px 30px 30px;
     padding: 4px;
-         
 }
 
 .article-card-container-row> img{
@@ -325,6 +347,9 @@ margin: 40px
     align-items: flex-start;
     padding-top: 5px;
 }
+.name-card{
+    font-size: 13px;
+}
 
 .star-icon i{
     margin-top: 30px;
@@ -333,23 +358,20 @@ margin: 40px
 /* ________________________________________________________ */
 /* other activity */
 
-/* inactive cards */
-.inactive-activity{
-    display: none;
-}
 
 .aside-container{
-    display: flex;
-    flex-direction: column;
     margin-top: 40px;
-    max-width: 100%;
-
 }
 
 .other-activity{
     display: flex;
+    align-items: center;
+    font-weight: bold;
     justify-content: space-between;
-    margin: 5px;
+    margin: 0;
+    width: 100%;
+    width: 100%;
+
 }
 
 aside>h2{
@@ -357,28 +379,34 @@ aside>h2{
 }
 
 .figure-card{
+    display: flex;
+    flex-direction: column;
     border-radius: 20px;
     box-shadow: 3px 3px 5px 2px #b2b2b2;
-    height: 435px;
-    width: 100%;
-    margin: 0;
-    justify-content: space-between;
+    height: 450px;
+    margin-left: 0;
+    margin-right: 0;
+    margin: 5px;
+    width: 280px;
 }
 
 .other-activity img{
-    width: 280px; 
+    width: 100%;
     height: 400px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
-.figure-card>figcaption{
-    padding: 5px;
+.figure-card figcaption{
     margin-left: 10px;
     font-size: 16px;
     font-weight: bold;
 }
-
+.link-card-other{
+    width: 100%;
+    text-decoration: none;
+    color: black; 
+}
 /* _________________________________________________________ */
 /* footer */
 
@@ -386,7 +414,6 @@ aside>h2{
     background-color: #D9D9D9;
     margin-top: 61px;
     padding-bottom: 20px;
-    max-width: 1440px;
     display: flex;
     justify-content: space-around;
 } 
@@ -394,6 +421,8 @@ aside>h2{
 .footer-column-items{
     display: flex;
     flex-direction: column;
+    list-style-type: none;
+
 } 
 
 .footer-column-items a{
@@ -409,31 +438,10 @@ aside>h2{
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /* tablet */
 @media screen and (max-width: 992px){
-    
-    /* filters */
-
-    .section-filter{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        max-width: 100%;
-    }
-
-    .filter{
-        margin-left: 25px;
-        align-items: stretch;
-    }
-
-    .filter-container{
-        display: flex;
-    }
-
     /* main container( accommodation + populars ) */
 
     .all-accommodation-container{
-        display: flex;
         flex-direction: column;
-        width: 100%;    
     }
 
     /* accommodation */
@@ -454,13 +462,16 @@ aside>h2{
         width: 100%;
         min-height: 278px;
         margin: 50px 20px 0 0;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     /* cards */
 
     .article-card-container-row{
         display: flex;
-        width: 252px ;   
+        justify-content: space-around;
+        width: 210px ;   
         height: 144px;
         margin: 0;
     }
@@ -474,50 +485,32 @@ aside>h2{
         border-radius: 20px 0 0 20px;
         object-fit: cover;
         height: 144px;
-        width: 106px;
+        width: 40%;
     }
 
     .column-text{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-top: 15px;
-        font-size: 14px;
+        margin-left: -15px;
     }
     
     .star-icon i{
-        padding-bottom: 20px;
+        margin-bottom: 50px;
     }
-
-    /* other*/
-
-    .aside-container{
-        width: 895px;
-        margin-bottom: 69px;
-    }
-    
+    /* other*/ 
     .other-activity{
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 0;   
-    }
-
-    .figure-card> img{
-        width: 182px;
-        height: 220px;
-        object-fit: cover;
-        font-size: 16px;
+        height: 270px;
+    } 
+    .figure-card img{
+        height: 225px;
     }
 
     .figure-card{
-        width: 182px;
         height: 267px;
-        justify-content: space-between;
+        width: 282px;
     }
 
     /* footer */
     .footer-container{
-        width: 895px;
+        max-width: 895px;
     }
 
 }
@@ -526,20 +519,12 @@ aside>h2{
 
 @media screen and (max-width: 768px){
     body{
-        margin: 0;
+        margin: 2px;
     }
-
-    /* .container-all{
-        
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-
-    } */
 
     /* navigation */
 
-    .header-container{
+    header{
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -563,7 +548,6 @@ aside>h2{
     }
 
     .nav-menu>li:hover{
-        color: #0065FC;
         border-bottom: 3px solid #0065FC;
         padding-bottom: 13px;
     }
@@ -587,6 +571,7 @@ aside>h2{
     .section-form-container{
         display: flex;
         justify-content: center;
+        margin-top: 50px;
     }
 
 
@@ -611,7 +596,6 @@ aside>h2{
     /* filters */
 
     .section-filter{
-        display: flex;
         flex-direction: column;
     }
 
@@ -623,65 +607,52 @@ aside>h2{
    .filter-container{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        width: 90%;
+        height: 100%;
+        justify-content: flex-start;
     }
 
     .filter{
-
-        border: 2px solid #D9D9D9;
-        border-radius: 25px;
-        width: 160px;
-        height: 50px;
-        padding: 0;
-        margin: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        font-size: 11px;
+        width: 40%;
     }
 
-    .filter> i{
-        margin-left: 15px;
-        font-size: 22px;
+    /* info */
+    .info-container{
+        margin-top: 50px;
     }
-
-    .filter:hover{
-        background-color: #deebff;
-        cursor: pointer;
-    }
-
-    /* main column reverse */
 
     .all-accommodation-container{
-        display: flex;
         flex-direction: column-reverse;
         margin: 0;
     }
 
     /* accommodation */
+    .link-card{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
+    }
     .section-accommodation-container{
         background: white;
         border-radius: 0;
         border: 0;
-        width: 100%;
+        align-items: center;
+        margin: 0;
     }
 
     .article-accommodation-container-col{
-        width: 335px;
+        min-width: 80%;
         height: 199px;
     }
     
     /* populars */
 
     .article-card-container-row{
-        width: 335px;
+        justify-content: flex-start;
+        min-width: 80%;
         height: 144px;
-    }
-
-    .article-card-container-row> img{
-        width: 40%;
-        height: 100%;
     }
 
     .populars-accommodation{
@@ -691,9 +662,7 @@ aside>h2{
     }
 
     .cards-container-tablet{
-        display: flex;
         flex-direction: column;
-        align-items: center;
         margin-bottom: 15px;
         padding-bottom: 20px;
     }
@@ -706,40 +675,22 @@ aside>h2{
     /* other activity */
 
     .other-activity{
-        display: flex;
         flex-direction: column;
-        align-items: center;
-    }
-
-    .aside-container> h2{
-        margin-left: 30px;
-    }
-
-    /* active cards */
-
-    .inactive-activity{
-        display: inline;
+        width: 100%;
+        height: 100%;
     }
 
     .figure-card{
-        display: flex;
-        flex-direction: column;
-        width: 334px;
-        height: 190px;
+        width: 90%;
+        height: auto;
         margin-top: 50px;
     }
 
-    .figure-card> figcaption{
-        width: 334px;
-        height: 190px ;
-        margin-top: 10px;
+    .figure-card img{
+        width: 100%;
+        height: 130px;
     }
 
-    .figure-card> img{
-        width: 100%;
-        height: 140px;
-        object-fit: cover;
-    }
 
     /* footer */
 
