@@ -326,7 +326,6 @@ header{
 .article-card-container-row{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     background: white;
     border-radius: 20px;
     box-shadow: 3px 3px 5px 2px #b2b2b2;
