@@ -409,25 +409,26 @@ aside>h2{
 /* _________________________________________________________ */
 /* footer */
 
-.footer-container{
+footer{
     background-color: #D9D9D9;
-    margin-top: 61px;
-    padding-bottom: 20px;
+    margin-top: 60px;
     display: flex;
     justify-content: space-around;
+    padding-bottom: 30px;
+
 } 
 
 .footer-column-items{
     display: flex;
     flex-direction: column;
     list-style-type: none;
-
 } 
-
+.footer-column-items>li{
+    margin-top: 10px;
+}
 .footer-column-items a{
     text-decoration: none;
     color: black;
-    padding: 3px;
 }
 .footer-column-items a:hover{
     color: #0065FC;
@@ -508,7 +509,7 @@ aside>h2{
     }
 
     /* footer */
-    .footer-container{
+    footer{
         max-width: 895px;
     }
 
@@ -693,7 +694,7 @@ aside>h2{
 
     /* footer */
 
-    .footer-container{
+    footer{
         display: flex;
         flex-direction: column;
         background: #D9D9D9;
