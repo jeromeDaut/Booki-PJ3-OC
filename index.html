@@ -13,8 +13,6 @@
 <body>
     <!-- logo Booki & navbar -->
     <header>
-
-            <div class="header-container">
                 <img src="images/Booki-2.png" alt="Logo du site Booki" class="logo-Booki">
 
                 <nav class="nav-menu-container">            
@@ -23,8 +21,8 @@
                             <li><a href="#other__activity" class="nav-activity">Activités</a></li>
                         </ul>
                 </nav>
-            </div>
-        
+    </header>
+    <main>   
             <!-- title -->
             <section class="section-title-container">
                         <h1 class="main-title">Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -48,24 +46,30 @@
             <section class="section-filter">
                 <h3>Filtres</h3> 
                     <div class="filter-container"> 
-                        <span class="filter"><i class="fas fa-money-bill-wave icon icon-filter"></i>Économique</span>
-                        <span class="filter"><i class="fa-solid fa-person icon icon-filter"></i>Familial</span>
-                        <span class="filter"><i class="fa-solid fa-heart icon icon-filter"></i>Romantique</span>
-                        <span class="filter"><i class="fa-solid fa-dog icon icon-filter"></i>Animaux autorisés</span>
+                        <div class="filter"><i class="fas fa-money-bill-wave icon icon-filter"></i><p>Économique</p></div>
+                        <div class="filter"><i class="fa-solid fa-person icon icon-filter"></i><p>Familial</p></div>
+                        <div class="filter"><i class="fa-solid fa-heart icon icon-filter"></i><p>Romantique</p></div>
+                        <div class="filter"><i class="fa-solid fa-dog icon icon-filter"></i><p>Animaux autorisés</p></div>
                     </div>
+                    <!-- <aside class="info-container">
+                
+                        <p class="circle-info"><i class="fa-solid fa-info icon"></i></p>
+                        <p>Plus de 500 logements sont disponible dans cette ville</p>
+    
+                </aside> -->
             </section>        
             <!-- info -->
-            <aside>
-                <div class="info-container">
+            <section class="info-container">
+                
                     <p class="circle-info"><i class="fa-solid fa-info icon"></i></p>
                     <p>Plus de 500 logements sont disponible dans cette ville</p>
-                </div>
-            </aside>
-    </header>
-<main>
+
+            </section>
+    
+
     <div class="all-accommodation-container">
         <!-- Accommodations in Marseille-->
-        <section class="section-accommodation-container">
+        <section class="section-accommodation-container ">
         
              <h2 id="location" class="title-accommodation">Hébergements à Marseille</h2>
 
@@ -85,7 +89,7 @@
                                 <i class="fa-solid fa-star icon star-card"></i>
                                 <i class="fa-solid fa-star icon star-card grey-star-icon"></i>
                             </div>
-                    </article>
+                        </article>
                 </a>
                 <!-- card 2 col -->
                 <a href="#" class="link-card">
@@ -215,7 +219,7 @@
                                     <h3 class="text-disposition-card name-card ">Chambres d'hôtes Au coeur de l'eau</h3>
                                     <p class="text-disposition-card price-card">Nuit à partir de 71€</p>
                                 </div>
-                                    <div class="stars star-icon">
+                                <div class="stars star-icon">
                                     <i class="fa-solid fa-star icon star-card card-first"></i>
                                     <i class="fa-solid fa-star icon star-card"></i>
                                     <i class="fa-solid fa-star icon star-card"></i>
@@ -228,7 +232,7 @@
                     <!-- card 3 row-->
                     <a href="#" class="link-card link-accommodation-populars">
                         <article class="article-card-container-row">
-                                <img src="images/bleublanc.jpg" alt="Hôtel Bleu et Blanc">
+                            <img src="images/bleublanc.jpg" alt="Hôtel Bleu et Blanc">
                             <div class="column-text">
                                 <div>
                                     <!-- &nbsp for h3 is required for box sizing-->
@@ -256,49 +260,33 @@
 
             <div class="other-activity">
 
-                <a href="#" class="link-card">
-                    <figure class="figure-card">
+                <figure class="figure-card">
+                    <a href="#" class="link-card-other">
                         <img src="images/vieux-port.jpg" alt="Photo du Vieux-Port">
                         <figcaption>Vieux-Port</figcaption>
-                    </figure>
-                </a>
+                    </a>
+                </figure>
 
-                <!-- active mobile -->
-                <a href="#" class="link-card inactive-activity">
-                    <figure class="figure-card ">
-                        <img src="images/Frioul.jpg" alt="îles du Frioul">
-                        <figcaption>Îles du Frioul</figcaption>
-                    </figure>
-                </a>
-
-                <a href="#" class="link-card">
-                    <figure class="figure-card">
+                <figure class="figure-card">
+                    <a href="#" class="link-card-other">
                         <img src="images/pomegue.jpg" alt="Photo Fort de Pomègues">
                         <figcaption>Fort de Pomègues</figcaption>
-                    </figure>
-                </a>
+                    </a>
+                </figure>
 
-                <a href="#" class="link-card">
-                    <figure class="figure-card">
+                <figure class="figure-card">
+                    <a href="#" class="link-card-other">
                         <img src="images/calanques.jpg" alt="Photo Parc national des Calanques">
                         <figcaption>Parc national des Calanques</figcaption>
-                    </figure>
-                </a>
+                    </a>
+                </figure>
 
-                <a href="#" class="link-card">
-                    <figure class="figure-card">
+                <figure class="figure-card">
+                    <a href="#" class="link-card-other">
                         <img src="images/notre-dame.jpg" alt="Photo de Notre-Dame-de-la-Garde">
                         <figcaption>Notre-Dame-de-la-Garde</figcaption>
-                    </figure>
-                </a>
-
-                <!-- active mobile -->
-                <a href="#" class="link-card inactive-activity">
-                    <figure class="figure-card">
-                        <img src="images/longchamp.jpg" alt="Parc Longchamp">
-                        <figcaption>Parc Longchamp</figcaption>
-                    </figure>
-                </a>
+                    </a>
+                </figure>
 
             </div>
         </aside>
@@ -307,24 +295,24 @@
     <footer>
             <div class="footer-container">
 
-                <div class="footer-column-items">
-                    <h3>À propos</h3>
-                    <a href="#">Fonctionnement du site</a>
-                    <a href="#">Conditions générales</a>
-                    <a href="#">Données et confidentialité</a>
-                </div>
+                <ul class="footer-column-items">
+                    <li><h3>À propos</h3></li>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
 
-                <div class="footer-column-items">
-                    <h3>Nos hébergements</h3>
-                    <a href="#">Charte qualité</a>
-                    <a href="#">Proposer votre hôtel</a>
-                </div>
+                <ul class="footer-column-items">
+                    <li><h3>Nos hébergements</h3></li>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Proposer votre hôtel</a></li>
+                </ul>
 
-                <div class="footer-column-items">
-                    <h3>Assistance</h3>
-                    <a href="#">Centre d'aide</a>
-                    <a href="#">Nous contacter</a>
-                </div>
+                <ul class="footer-column-items">
+                    <li><h3>Assistance</h3></li>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
 
             </div>
 
