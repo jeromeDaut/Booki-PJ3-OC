@@ -3,19 +3,27 @@
 /* Desktop */
 /* __________________________________________________ */
                      /* generals */
-                     
+:root {
+    --main-color: #F2F2F2; /* var(--main-color) */
+    --second-color: #0065FC; /* var(--second-color) */
+    --hover-btn-color: #DEEBFF; /* var(--hover-btn-color) */
+    --border-color: #D9D9D9; /* var(--border-color) */
+    --white-color: #FFFFFF; /* var(--white-color) */
+    --black-color: #000000; /* var(--black-color) */
+}
+                                         
 body{
 font-family: Raleway, sans-serif ;
 font-style: normal; 
 max-width: 1440px;
-background-color: white;
+background-color: var(--white-color);
 margin: 40px 40px 0 40px;
 }
 
 /* _________________________________________________ */
      /* icons font-awesome (filter and stars) : */
 .icon{
- color: #0065FC;
+ color: var(--second-color);
  font-size: 12px;
  margin-right: 10px;
 }
@@ -25,7 +33,7 @@ margin: 40px 40px 0 40px;
 }
 
 .grey-star-icon{
-    color: #F2F2F2;
+    color: var(--main-color);
 }
 
 /* ________________________________________________ */
@@ -41,13 +49,13 @@ header{
 }
 
 .nav-menu a{
-    color: black;
+    color: var(--black-color);
     text-decoration: none;
 }
 
 .nav-menu a:hover{
-    color: #0065FC;
-    border-top: 3px solid #0065FC;
+    color: var(--second-color);
+    border-top: 3px solid var(--second-color);
     padding-top: 20px;
 }
 
@@ -79,8 +87,8 @@ header{
 
 /* box decoration icon map */
 .search-bar-decoration{
-    background: #D9D9D9;
-    border: 1px solid #D9D9D9;       
+    background:var(--main-color);
+    border: 1px solid var(--border-color);       
     border-radius: 15px 0 0 15px;
     width: 50px;
     height: 47px;
@@ -94,7 +102,7 @@ header{
 
 /* searchBar */
 .input-search-bar{
-    border: 1px solid #D9D9D9;
+    border: 1px solid var(--border-color);
     width: 260px;
     font-size: 18px;
     font-weight: bold;
@@ -106,10 +114,10 @@ header{
 
 /* btn submit */
 .btn-search-bar{
-    background: #0065FC;
+    background: var(--second-color);
     border-radius: 0px 15px 15px 0px;
-    border: 1px solid #0065FC;
-    color: white;
+    border: 1px solid var(--second-color);
+    color: var(--white-color);
     width: 132px;
     cursor: pointer;
 }
@@ -155,7 +163,7 @@ header{
 }
 
     .filter{
-        border: 2px solid #D9D9D9;
+        border: 2px solid var(--border-color);
         border-radius: 25px;
         width: 25%;
         height: 50px;
@@ -167,7 +175,7 @@ header{
         font-size: 11px;
     }
 .filter:hover{
-    background-color: #deebff;
+    background-color: var(--hover-btn-color);
     cursor: pointer;
 }
 
@@ -181,11 +189,10 @@ header{
 }
 
 .circle-info{
-    background: white;
     width: 24px;
     height: 24px;
     border-radius: 24px;
-    border: 1px solid #D9D9D9;
+    border: 1px solid var(--border-color);
     margin-right: 5px;    
 }
 
@@ -207,8 +214,7 @@ header{
 /* sections accommodations + populars containers */
 
 .section-accommodation-container{
-    background-color: #D9D9D9;
-    border: 1px solid #D9D9D9;
+    background-color: var(--main-color);
     border-radius: 20px;
     width: 880px;
     min-height: 626px;
@@ -218,8 +224,7 @@ header{
 }
 
 .populars-accommodation{
-    background-color: #D9D9D9;
-    border: 1px solid #F2F2F2;
+    background-color: var(--main-color);
     border-radius: 20px;
     width: 420px;
     min-height: 625px;
@@ -251,19 +256,19 @@ header{
 
 .section-link-showMore> a{
     text-decoration: none;
-    color: black; 
+    color: var(--black-color); 
 }
 
 .section-link-showMore> a:hover{
-    color: #0065FC;
+    color: var(--second-color);
 }
 
 .article-accommodation-container-col{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background: white;
-    box-shadow: 3px 3px 5px 2px #b2b2b2;
+    background: var(--white-color);
+    box-shadow: 3px 3px 5px 2px var(--border-color);
     border-radius: 20px;   
     width: 246px;   
     margin-top: 30px;  
@@ -279,14 +284,14 @@ header{
 
 .link-card{
     text-decoration: none;
-    color: black;
+    color: var(--black-color);
 }
 
 .text-disposition-card{
     margin: 0;
     margin-left: 20px;
     text-decoration: none;
-    color: black;
+    color: var(--black-color);
     padding-top: 3px;
 }
 
@@ -326,9 +331,9 @@ header{
 .article-card-container-row{
     display: flex;
     flex-direction: row;
-    background: white;
+    background: var(--white-color);
     border-radius: 20px;
-    box-shadow: 3px 3px 5px 2px #b2b2b2;
+    box-shadow: 3px 3px 5px 2px var(--border-color);
     margin: 0 30px 30px 30px;
     padding: 4px;
 }
@@ -382,7 +387,7 @@ aside>h2{
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    box-shadow: 3px 3px 5px 2px #b2b2b2;
+    box-shadow: 3px 3px 5px 2px var(--border-color);
     height: 450px;
     margin-left: 0;
     margin-right: 0;
@@ -405,13 +410,13 @@ aside>h2{
 .link-card-other{
     width: 100%;
     text-decoration: none;
-    color: black; 
+    color: var(--black-color); 
 }
 /* _________________________________________________________ */
 /* footer */
 
 footer{
-    background-color: #D9D9D9;
+    background-color: var(--main-color);
     margin-top: 60px;
     display: flex;
     justify-content: space-around;
@@ -429,10 +434,10 @@ footer{
 }
 .footer-column-items a{
     text-decoration: none;
-    color: black;
+    color: var(--black-color);
 }
 .footer-column-items a:hover{
-    color: #0065FC;
+    color: var(--second-color);
 }
 
 
@@ -544,7 +549,7 @@ footer{
     }
 
     .nav-menu li:hover{
-        border-bottom: 3px solid #0065FC;
+        border-bottom: 3px solid var(--second-color);
         padding-bottom: 13px;
 
     }
@@ -552,9 +557,7 @@ footer{
     /* delete origin:hover */
 
     .nav-menu a:hover{
-        /* color: #0065FC; */
         border-top: none;
-        /* padding-top: 0; */
     }
 
     /* title */
@@ -582,10 +585,10 @@ footer{
 
     .btn-icon-search-bar{
         display: inline;
-        background: #0065FC;
+        background: var(--second-color);
         border-radius: 0px 15px 15px 0px;
-        border: 1px solid #0065FC;
-        color: white;
+        border: 1px solid var(--second-color);
+        color: var(--white-color);
         width: 49px;
         cursor: pointer;
     }
@@ -632,7 +635,7 @@ footer{
 
     }
     .section-accommodation-container{
-        background: white;
+        background: var(--white-color);
         border-radius: 0;
         border: 0;
         align-items: center;
@@ -653,7 +656,7 @@ footer{
     }
 
     .populars-accommodation{
-        background: #D9D9D9;
+        background: var(--main-color);
         border-radius: 0;
         padding-right: 20px;
     }
@@ -690,7 +693,6 @@ footer{
     .figure-card figcaption{
         padding-top: 0;
     }
-
 
     /* footer */
     footer{
