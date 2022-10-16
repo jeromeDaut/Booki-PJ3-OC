@@ -16,7 +16,6 @@ body{
 font-family: Raleway, sans-serif ;
 font-style: normal; 
 max-width: 1440px;
-background-color: var(--white-color);
 margin: 40px 40px 0 40px;
 }
 
@@ -27,13 +26,8 @@ margin: 40px 40px 0 40px;
  font-size: 12px;
  margin-right: 10px;
 }
-
-.icon .icon-filter{
-    font-size: 22px;
-}
-
 .grey-star-icon{
-    color: var(--main-color);
+    color: var(--border-color);
 }
 
 /* ________________________________________________ */
@@ -107,10 +101,13 @@ header{
     font-size: 18px;
     font-weight: bold;
 }
+.input-search-bar:hover{
+    border: 1px solid var(--border-color);
 
+}
 /* #ville::placeholder{
     color: black;
-} */ 
+} */
 
 /* btn submit */
 .btn-search-bar{
@@ -403,7 +400,7 @@ aside>h2{
 }
 
 .figure-card figcaption{
-    margin-left: 10px;
+    margin: 2px 0 0 10px;
     font-size: 16px;
     font-weight: bold;
 }
