@@ -1,5 +1,7 @@
-
-/* xxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* import tablet */
+@import url("./tablet.css");
+/* import mobile */
+@import url("./mobile.css");
 /* Desktop */
 /* __________________________________________________ */
                      /* generals */
@@ -16,8 +18,12 @@ body{
 font-family: Raleway, sans-serif ;
 font-style: normal; 
 max-width: 1440px;
-margin: 40px 40px 0 40px;
+margin: auto;
 }
+body> *{
+    margin: 40px 40px 0 40px;
+    
+    }
 
 /* _________________________________________________ */
      /* icons font-awesome (filter and stars) : */
@@ -59,12 +65,17 @@ header{
 }
 
 .nav-hosting{
+    padding: 0 15px;
     margin-right: 15px;
+}
+.nav-activity{
+    padding: 0px 25px;
 }
 
 /* _____________________________________________ */
                     /* title */
 .main-title{
+    margin-top: 50px;
     font-size: 22px;
 }
 
@@ -127,23 +138,16 @@ header{
 
 /* _____________________________________________ */
                     /* Filters */
-.section-filter{
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    margin-top: 20px;
-    flex-wrap: nowrap;
-    width: 100%;
+
+.section-filter> h3{
+    margin-right: 5px;
 }
 
 .filter-container{
-    font-size: 17px;
     font-weight: bold;
     display: flex;
-    justify-content: space-around;
+    margin-top: 30px;
     width: 70%;
-    height: 50px;
-    margin-left: 20px;
 }
 
 .filter-container .icon{
@@ -153,24 +157,21 @@ header{
     margin-left: 10px;
 }
 .filter>p{
-    width: 70%;
-    align-self: center;
-    margin-right: 5px;
-
+    white-space: nowrap;
+    padding-right: 10px;
 }
 
-    .filter{
-        border: 2px solid var(--border-color);
-        border-radius: 25px;
-        width: 25%;
-        height: 50px;
-        padding: 0;
-        margin: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        font-size: 11px;
-    }
+.filter{
+    border: 2px solid var(--border-color);
+    border-radius: 25px;
+    width: 60%;
+    height: 48px;
+    padding: 0;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+}
 .filter:hover{
     background-color: var(--hover-btn-color);
     cursor: pointer;
@@ -236,6 +237,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    height: auto;
 }
 
 .title-accommodation{
@@ -267,8 +269,9 @@ header{
     background: var(--white-color);
     box-shadow: 3px 3px 5px 2px var(--border-color);
     border-radius: 20px;   
-    width: 246px;   
-    margin-top: 30px;  
+    width: 246px;
+    min-width: 20%; 
+    margin: 30px 10px 0 10px;
     padding: 4px;
 }
 
@@ -282,6 +285,8 @@ header{
 .link-card{
     text-decoration: none;
     color: var(--black-color);
+    display: flex;
+    width: 33%;
 }
 
 .text-disposition-card{
@@ -356,6 +361,10 @@ header{
 .star-icon i{
     margin-top: 30px;
 }
+.link-accommodation-populars{
+    text-decoration: none;
+    color: var(--black-color);
+}
 
 /* ________________________________________________________ */
 /* other activity */
@@ -372,12 +381,12 @@ header{
     justify-content: space-between;
     margin: 0;
     width: 100%;
-    width: 100%;
+
 
 }
 
 aside>h2{
-    font-size: 22px;
+    font-size: 21px;
 }
 
 .figure-card{
@@ -390,6 +399,7 @@ aside>h2{
     margin-right: 0;
     margin: 5px;
     width: 280px;
+    height: 444px;
 }
 
 .other-activity img{
@@ -416,8 +426,9 @@ footer{
     background-color: var(--main-color);
     margin-top: 60px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-bottom: 30px;
+    padding-right: 25%;
 
 } 
 
@@ -436,266 +447,3 @@ footer{
 .footer-column-items a:hover{
     color: var(--second-color);
 }
-
-
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-/* tablet */
-@media screen and (max-width: 992px){
-    /* main container( accommodation + populars ) */
-
-    .all-accommodation-container{
-        flex-direction: column;
-    }
-
-    /* accommodation */
-
-    .section-accommodation-container{
-        width: 100%;
-    }
-
-    /* populars */
-
-    .accommodation-populars-title{
-        justify-content: space-between;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .populars-accommodation{
-        width: 100%;
-        min-height: 278px;
-        margin: 50px 20px 0 0;
-        justify-content: space-around;
-    }
-
-    /* cards */
-
-    .article-card-container-row{
-        display: flex;
-        justify-content: space-around;
-        width: 210px ;   
-        height: 144px;
-        margin: 0;
-    }
-
-    .cards-container-tablet{
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .article-card-container-row> img{
-        border-radius: 20px 0 0 20px;
-        object-fit: cover;
-        height: 144px;
-        min-width: 50%;
-    }
-
-    .column-text{
-        margin-left: -15px;
-    }
-
-    /* other*/ 
-    .other-activity{
-        height: 270px;
-    } 
-    .figure-card img{
-        height: 225px;
-    }
-
-    .figure-card{
-        height: 267px;
-        width: 282px;
-    }
-
-    /* footer */
-    footer{
-        max-width: 895px;
-    }
-
-}
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-/* smartphone */
-
-@media screen and (max-width: 768px){
-    body{
-        margin: 2px;
-    }
-
-    /* navigation */
-
-    header{
-        flex-direction: column;
-        align-items: center;
-        margin-top: 21px;
-    }
-
-    .nav-menu-container{
-        width: 100%;
-    }
-
-    .nav-menu{
-        padding: 0;
-        text-align: center;   
-    }
-
-    .nav-menu>li {
-        width: 100%;
-        align-self: stretch; 
-        padding-bottom: 16px;
-        margin-top: 40px;
-    }
-
-    .nav-menu li:hover{
-        border-bottom: 3px solid var(--second-color);
-        padding-bottom: 13px;
-
-    }
-
-    /* delete origin:hover */
-
-    .nav-menu a:hover{
-        border-top: none;
-    }
-
-    /* title */
-
-    .section-title-container{
-        margin-left: 40px;
-    }
-
-    /* SearchBar */
-
-    .section-form-container{
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-    }
-
-
-    .form-search-container{
-        width: 90%;
-    }
-
-    .btn-search-bar{
-        display: none;
-    }
-
-    .btn-icon-search-bar{
-        display: inline;
-        background: var(--second-color);
-        border-radius: 0px 15px 15px 0px;
-        border: 1px solid var(--second-color);
-        color: var(--white-color);
-        width: 49px;
-        cursor: pointer;
-    }
-
-    /* filters */
-
-    .section-filter{
-        flex-direction: column;
-    }
-
-    .section-filter> h3{
-        align-self: flex-start;
-        margin-left: 45px;
-    }
-
-   .filter-container{
-        display: flex;
-        flex-wrap: wrap;
-        width: 90%;
-        height: 100%;
-        justify-content: flex-start;
-    }
-
-    .filter{
-        width: 40%;
-    }
-
-    /* info */
-    .info-container{
-        margin-top: 50px;
-    }
-
-    .all-accommodation-container{
-        flex-direction: column-reverse;
-        margin: 0;
-    }
-
-    /* accommodation */
-    .link-card{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-    .section-accommodation-container{
-        background: var(--white-color);
-        border-radius: 0;
-        border: 0;
-        align-items: center;
-        margin: 0;
-    }
-
-    .article-accommodation-container-col{
-        min-width: 80%;
-        height: 199px;
-    }
-    
-    /* populars */
-
-    .article-card-container-row{
-        justify-content: flex-start;
-        min-width: 80%;
-        height: 144px;
-    }
-
-    .populars-accommodation{
-        background: var(--main-color);
-        border-radius: 0;
-        padding-right: 20px;
-    }
-
-    .cards-container-tablet{
-        flex-direction: column;
-        margin-bottom: 15px;
-        padding-bottom: 20px;
-    }
-
-    .article-card-container-row{
-        margin-top: 15px;
-        
-    }
-
-    /* other activity */
-
-    .other-activity{
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-    }
-
-    .figure-card{
-        width: 90%;
-        height: auto;
-        margin-top: 50px;
-    }
-
-    .figure-card img{
-        width: 100%;
-        height: 130px;
-    }
-    .figure-card figcaption{
-        padding-top: 0;
-    }
-
-    /* footer */
-    footer{
-        flex-direction: column;
-
-    }
-
-
-} 
