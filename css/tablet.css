@@ -1,0 +1,89 @@
+/* tablet */
+@media screen and (max-width: 992px){
+    /* filters */
+    .filter-container{
+        width: 100%;
+        justify-content: space-between;
+        font-size: 15;
+    }
+    .filter-container .icon{
+        font-size: 20px;
+        width: 20%;
+        align-self: center;
+        margin-left: 15px;
+    }
+    .filter{
+        font-size: 15px;
+    }
+    /* main container( accommodation + populars ) */
+
+    .all-accommodation-container{
+        flex-direction: column;
+    }
+
+    /* accommodation */
+
+    .section-accommodation-container{
+        width: 100%;
+    }
+
+    /* populars */
+
+    .accommodation-populars-title{
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .populars-accommodation{
+        width: 100%;
+        min-height: 278px;
+        margin: 50px 20px 0 0;
+        justify-content: space-around;
+    }
+
+    /* cards */
+
+    .article-card-container-row{
+        display: flex;
+        justify-content: space-around;
+        width: 210px ;   
+        height: 144px;
+        margin: 0;
+    }
+
+    .cards-container-tablet{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .article-card-container-row> img{
+        border-radius: 20px 0 0 20px;
+        object-fit: cover;
+        height: 144px;
+        min-width: 50%;
+    }
+
+    .column-text{
+        margin-left: -15px;
+    }
+
+    /* other*/ 
+
+    .figure-card img{
+        height: 225px;
+    }
+
+    .figure-card{
+        height: 267px;
+        max-width: 182px;
+        margin: 10px;
+    }
+
+    /* footer */
+    footer{
+        max-width: 895px;
+        white-space: nowrap;
+    }
+
+}
