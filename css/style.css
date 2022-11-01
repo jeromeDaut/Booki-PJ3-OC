@@ -428,14 +428,17 @@ footer{
     display: flex;
     justify-content: space-between;
     padding-bottom: 30px;
-    padding-right: 25%;
-
+    padding-right: 15%;
+}
+.footer-column-container{
+    margin: 0 auto;
 } 
 
 .footer-column-items{
     display: flex;
     flex-direction: column;
     list-style-type: none;
+    padding: 0;
 } 
 .footer-column-items>li{
     margin-top: 10px;

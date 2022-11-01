@@ -210,8 +210,10 @@
     footer{
         width: 100%;
         flex-direction: column;
-
+        
     }
-
+    .footer-column-container{
+        margin: 0 10%;
+    }
 
 } 
