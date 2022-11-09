@@ -47,6 +47,9 @@
     .section-title-container{
         margin: 0 0 0 25px;
     }
+    .main-title{
+        font-size: 23px;
+    }
 
     /* SearchBar */
     .section-form-container{
